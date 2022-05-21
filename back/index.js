@@ -10,7 +10,7 @@ const cors = require("cors");
 const PORT = process.env.PORT || 3500;
 (async () => {
   await migrations.migrate();
-  //await seeder.seed();
+  await seeder.seed();
 })();
 
 const corsOptions = require("./.config/corsOptions");
